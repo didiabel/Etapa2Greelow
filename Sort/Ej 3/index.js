@@ -6,6 +6,7 @@ let errorr = document.querySelector(".error");
 let newHeight = 150;
 
 height.addEventListener("change", function (e) {
+   
   if (height.value > 400 || height.value < 150) {
     errorr.classList.remove("d-none");
     errorr.classList.add("d-flex");
@@ -33,10 +34,16 @@ window.onload = function () {
     let nro = Math.floor(Math.random() * 10) + 1;
     document.querySelector(
       ".carta"
-    ).innerHTML += `  <div class="cartita border rounded m-3 p-3" style="height: ${newHeight}px; width: ${newWidth}px">
-    <p class="card-title d-flex justify-content-start">${nro}</p>
-     <p class="card-text d-flex justify-content-around align-self-center">${palo}</p>
-     <p class="d-flex justify-content-end " >${nro}</p>  
+    ).innerHTML += `  <div class="cartita border rounded m-3" style=" width: ${newWidth}px">
+    <div class='d-flex justify-content-start cartita p-1'>
+            <p style="height: ${newHeight/3}px">${nro}</p>
+            </div>
+            <div class="d-flex justify-content-around cartita p-1" >
+            <p  style="height: ${newHeight/3}px; ">${palo}</p>
+            </div>
+            <div class="d-flex justify-content-end cartita">
+            <p >${nro}</p>  
+            </div>
 </div>`;
   }
   primerCarta();
@@ -48,12 +55,19 @@ function mostrarCarta() {
   let newNro = Math.floor(Math.random() * 10) + 1;
   document.querySelector(
     ".carta"
-  ).innerHTML += `  <div class="cartita border rounded m-3 p-3" style="height: ${newHeight}px; width: ${newWidth}px">
-          <p class="card-title d-flex justify-content-start">${newNro}</p>
-           <p class="card-text d-flex justify-content-around align-self-center">${newPalo}</p>
-           <p class="d-flex justify-content-end" >${newNro}</p>  
+  ).innerHTML += `  <div class="cartita border rounded m-3 " style=" width: ${newWidth}px">
+          <div class='d-flex justify-content-start cartita p-1'>
+            <p style="height: ${newHeight/3}px">${newNro}</p>
+            </div>
+            <div class="d-flex justify-content-around cartita p-1" >
+            <p  style="height: ${newHeight/3}px; ">${newPalo}</p>
+            </div>
+            <div class="d-flex justify-content-end cartita">
+            <p >${newNro}</p>  
+            </div>
       </div>`;
 }
+
 let timeout = setInterval(function () {
   mostrarCarta();
 }, 10000);
