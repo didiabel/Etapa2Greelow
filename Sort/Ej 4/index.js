@@ -51,23 +51,9 @@ sort.addEventListener("click", function () {
   const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
       for (let a = 0; a < array.length - 1; a++) {
-        
         if (arrayParaSort[a].newNro > arrayParaSort[a + 1].newNro) {
           let pos = arrayParaSort[a];
           arrayParaSort[a] = arrayParaSort[a + 1];
-          // document.querySelector(".cartaSortPrueba").innerHTML += `<div class="cartita border rounded m-2" style=" width: 100px">
-          // <div class='m-1'>
-          // <div class='d-flex justify-content-start cartita'>
-          // <p>${arrayParaSort[a].newNro}</p>
-          // </div>
-          // <div class="d-flex justify-content-around cartita" >
-          // <p>${arrayParaSort[a].newPalo}</p>
-          // </div>
-          // <div class="d-flex justify-content-end cartita">
-          // <p >${arrayParaSort[a].newNro}</p>  
-          // </div>
-          // </div>
-          // </div>`
           arrayParaSort[a + 1] = pos;
         }
       }
