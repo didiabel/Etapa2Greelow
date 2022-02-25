@@ -63,7 +63,7 @@ const StartUp = () => {
     setLoading(true);
     setTimeout(function () {
       setXoO(empieza);
-      navigate("/juego");
+      navigate("/Etapa2Greelow/juego");
     }, 2000);
   };
   return (

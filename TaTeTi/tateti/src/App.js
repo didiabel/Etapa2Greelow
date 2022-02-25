@@ -14,8 +14,8 @@ function App() {
       <div className="app">
         <Router>
           <Routes>
-            <Route path="/" element={<StartUp />} />
-            <Route path="/juego" element={<Game/>} />
+            <Route path="/Etapa2Greelow/" element={<StartUp />} />
+            <Route path="/Etapa2Greelow/juego" element={<Game/>} />
           </Routes>
         </Router>
       </div>

@@ -23,7 +23,7 @@ const Game = () => {
   const inicio = () => {
     setEmpate(false);
     setPosiciones(posicionesCopia);
-    navigate("/");
+    navigate("/Etapa2Greelow/");
   };
   const customModalStyles = {
     content: {
@@ -62,7 +62,7 @@ const Game = () => {
   //si algun jugador no tiene nombre ir al inicio
   if (!jugador1 || !jugador2) {
     setTimeout(() => {
-    navigate("/");
+    navigate("/Etapa2Greelow/");
     }, 3000);
   }
 
