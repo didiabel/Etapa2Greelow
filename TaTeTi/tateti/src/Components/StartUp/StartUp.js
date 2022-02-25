@@ -67,9 +67,11 @@ const StartUp = () => {
     }, 2000);
   };
   return (
-    <div className="d-flex justify-content-around align-items-center vh-100">
+    <div className="d-flex justify-content-around  align-items-center vh-100">
+        <div className="caja startup">
+            
       {loading ? (
-        <TailSpin color="#00BFFF" height={40} width={40} />
+        <div className="d-flex justify-content-around  align-items-center"><TailSpin color="#00BFFF" height={40} width={40} /></div>
       ) : (
         <div className=" border rounded p-5">
           <div className="text-center ">
@@ -131,6 +133,7 @@ const StartUp = () => {
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 };
