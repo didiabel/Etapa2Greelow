@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+* {
+    font-family: 'Cardo', serif;
+        font-size: 15px;
+      color: rgb(84, 216, 106);
+}
+.app{
+    background-color: rgb(46, 46, 187);
+}
+.celda {
+  height: 150px;
+  width: 150px;
+}
+.celda h1 {
+  font-size: 100px;
+}
+.caja {
+  height: 450px;
+  width: 453px;
+}
+.colorx {
+  color: rgb(100, 179, 69);
+}
+.coloro {
+  color: rgb(177, 68, 68);
+}
+.icons {
+  size: 40px;
+}
+.confeti{
+    height: 100%;
+    width: 100%;
+}
+.cajaModal {
+    height: 150px;
+    width: 153px;
+  }
+  .celdaModal {
+    height: 50px;
+    width: 50px;
+  }
