@@ -4,7 +4,6 @@ import "./Game.css";
 import Confetti from "react-confetti";
 import Modal from "react-modal";
 import { useNavigate } from "react-router-dom";
-import { FacebookIcon, TwitterIcon, WhatsappIcon } from "react-share";
 import { TailSpin } from "react-loader-spinner";
 import ShareButton from 'react-social-share-buttons'
 
@@ -283,7 +282,9 @@ const Game = () => {
               <h1>
                 {players[0].player} "{players[0].jug}"
               </h1>
-              <h1>vs</h1>
+              <p></p>
+              <h1>  vs  </h1>
+              <p></p>
               <h1>
                 "{players[1].jug}" {players[1].player}
               </h1>
@@ -307,6 +308,7 @@ const Game = () => {
                 ? "Ganaste: " + players[0].player
                 : "Ganaste: " + players[1].player}
             </h2>
+            <div className="d-flex justify-content-around align-items-center">
             <div className="caja row d-flex justify-content-center align-items-center">
               {posiciones.map((element) => {
                 return (
@@ -326,6 +328,7 @@ const Game = () => {
                   </div>
                 );
               })}
+            </div>
             </div>
           </div>
         </div>

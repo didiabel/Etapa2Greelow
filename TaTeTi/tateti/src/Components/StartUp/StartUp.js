@@ -68,7 +68,7 @@ const StartUp = () => {
   };
   return (
     <div className="d-flex justify-content-around  align-items-center vh-100">
-        <div className="caja startup">
+        <div className="startup">
             
       {loading ? (
         <div className="d-flex justify-content-around  align-items-center"><TailSpin color="#00BFFF" height={40} width={40} /></div>
