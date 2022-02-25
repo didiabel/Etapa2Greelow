@@ -254,9 +254,26 @@ const Game = () => {
             <ShareButton
                 compact
                 socialMedia={'facebook'}
-                url={"https://xkcd.com/1024/"}
-                media={"https://imgs.xkcd.com/comics/error_code.png"}
-                text="Sit by a lake"
+                url={"https://didiabel.github.io/Etapa2Greelow/"}
+                text="Juga Al TaTeTi"
+            />
+            <ShareButton
+                compact
+                socialMedia={'twitter'}
+                url={"https://didiabel.github.io/Etapa2Greelow/"}
+                text="Juga Al TaTeTi"
+            />
+            <ShareButton
+                compact
+                socialMedia={'pinterest'}
+                url={"https://didiabel.github.io/Etapa2Greelow/"}
+                text="Juga Al TaTeTi"
+            />
+            <ShareButton
+                compact
+                socialMedia={'google-plus'}
+                url={"https://didiabel.github.io/Etapa2Greelow/"}
+                text="Juga Al TaTeTi"
             />
             </div>
           </Modal>
