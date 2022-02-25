@@ -5,7 +5,7 @@ import Confetti from "react-confetti";
 import Modal from "react-modal";
 import { useNavigate } from "react-router-dom";
 import { TailSpin } from "react-loader-spinner";
-import ShareButton from 'react-social-share-buttons'
+import ShareButton from "react-social-share-buttons";
 
 const Game = () => {
   const { XoO, setXoO, jugador1, jugador2, players, setPlayers } =
@@ -13,6 +13,7 @@ const Game = () => {
   const [confeti, setConfeti] = useState(false);
   const [modalIsOpen, setIsOpen] = useState(false);
   const [empate, setEmpate] = useState(false);
+  const [clickea, setClickea] = useState(false);
 
   function closeModal() {
     setIsOpen(false);
@@ -25,7 +26,17 @@ const Game = () => {
     navigate("/Etapa2Greelow/");
   };
   const customModalStyles = {
+    overlay: {
+      position: "fixed",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(255, 255, 255,0.15)",
+    },
     content: {
+      position: "absolute",
+      backgroundColor: "white",
       top: "50%",
       left: "50%",
       right: "auto",
@@ -33,7 +44,7 @@ const Game = () => {
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
       transition: "linear",
-      opacity: "90%",
+      opacity: "100%",
     },
   };
   const [posiciones, setPosiciones] = useState([
@@ -61,7 +72,7 @@ const Game = () => {
   //si algun jugador no tiene nombre ir al inicio
   if (!jugador1 || !jugador2) {
     setTimeout(() => {
-    navigate("/Etapa2Greelow/");
+      navigate("/Etapa2Greelow/");
     }, 3000);
   }
 
@@ -161,26 +172,23 @@ const Game = () => {
           }
           return jug;
         });
-        setPlayers(nuevoPunto);
+        return setPlayers(nuevoPunto);
       }
-    }
-    if (
-      a1 !== "" &&
-      a2 !== "" &&
-      a3 !== "" &&
-      b1 !== "" &&
-      b2 !== "" &&
-      b3 !== "" &&
-      c1 !== "" &&
-      c2 !== "" &&
-      c3 !== ""
-    ) {
-      setEmpate(true);
+    }else if (a1 !== "" &&
+    a2 !== "" &&
+    a3 !== "" &&
+    b1 !== "" &&
+    b2 !== "" &&
+    b3 !== "" &&
+    c1 !== "" &&
+    c2 !== "" &&
+    c3 !== ""  ) {
+        setEmpate(true);
       setIsOpen(true);
     }
   }, [posiciones]);
   return (
-    <>
+    <div>
       {!jugador1 || !jugador2 ? (
         <div className="d-flex justify-content-around align-items-center vh-100">
           <TailSpin color="#00BFFF" height={40} width={40} />
@@ -203,10 +211,15 @@ const Game = () => {
               </h2>
             </div>
             <div className="d-flex justify-content-around align-items-center">
-              <h4 className="d-flex justify-content-around">
-                El conteo va: {players[0].puntaje} {players[0].player} vs{" "}
-                {players[1].player} {players[1].puntaje}
-              </h4>
+              <div>
+                <h6 className="d-flex justify-content-around">
+                  El conteo va:{" "}
+                </h6>
+                <h4>
+                  {players[0].puntaje} {players[0].player} vs{" "}
+                  {players[1].player} {players[1].puntaje}
+                </h4>
+              </div>
               <button
                 className="btn btn-success m-5"
                 onClick={() => resetPuntaje()}
@@ -215,27 +228,27 @@ const Game = () => {
               </button>
             </div>
             <div className="d-flex justify-content-around align-items-center">
-            <div className="cajaModal row d-flex justify-content-center align-items-center">
-              {posiciones.map((element) => {
-                return (
-                  <div
-                    key={element.celda}
-                    id={element.celda}
-                    className="celdaModal col-4 border d-flex justify-content-around align-items-center"
-                  >
-                    <h1 className={element.valor === 1 ? "colorx" : "coloro"}>
-                      {element.valor === 1
-                        ? "X"
-                        : element.valor === 0
-                        ? "O"
-                        : ""}
-                    </h1>
-                  </div>
-                );
-              })}
+              <div className="cajaModal row d-flex justify-content-center align-items-center">
+                {posiciones.map((element) => {
+                  return (
+                    <div
+                      key={element.celda}
+                      id={element.celda}
+                      className="celdaModal col-4 border d-flex justify-content-around align-items-center"
+                    >
+                      <h1 className={element.valor === 1 ? "colorx" : "coloro"}>
+                        {element.valor === 1
+                          ? "X"
+                          : element.valor === 0
+                          ? "O"
+                          : ""}
+                      </h1>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-            </div>
-            <div>
+            <div className="d-flex justify-content-around align-items-center">
               <button className="btn btn-dark m-5" onClick={() => inicio()}>
                 Inicio
               </button>
@@ -250,30 +263,30 @@ const Game = () => {
               </button>
             </div>
             <div className="d-flex justify-content-around align-items-center">
-            <ShareButton
+              <ShareButton
                 compact
-                socialMedia={'facebook'}
+                socialMedia={"facebook"}
                 url={"https://didiabel.github.io/Etapa2Greelow/"}
                 text="Juga Al TaTeTi"
-            />
-            <ShareButton
+              />
+              <ShareButton
                 compact
-                socialMedia={'twitter'}
+                socialMedia={"twitter"}
                 url={"https://didiabel.github.io/Etapa2Greelow/"}
                 text="Juga Al TaTeTi"
-            />
-            <ShareButton
+              />
+              <ShareButton
                 compact
-                socialMedia={'pinterest'}
+                socialMedia={"pinterest"}
                 url={"https://didiabel.github.io/Etapa2Greelow/"}
                 text="Juga Al TaTeTi"
-            />
-            <ShareButton
+              />
+              <ShareButton
                 compact
-                socialMedia={'google-plus'}
+                socialMedia={"google-plus"}
                 url={"https://didiabel.github.io/Etapa2Greelow/"}
                 text="Juga Al TaTeTi"
-            />
+              />
             </div>
           </Modal>
           {confeti ? <Confetti className="confeti" /> : ""}
@@ -283,7 +296,7 @@ const Game = () => {
                 {players[0].player} "{players[0].jug}"
               </h1>
               <p></p>
-              <h1>  vs  </h1>
+              <h1> vs </h1>
               <p></p>
               <h1>
                 "{players[1].jug}" {players[1].player}
@@ -309,31 +322,35 @@ const Game = () => {
                 : "Ganaste: " + players[1].player}
             </h2>
             <div className="d-flex justify-content-around align-items-center">
-            <div className="caja row d-flex justify-content-center align-items-center">
-              {posiciones.map((element) => {
-                return (
-                  <div
-                    key={element.celda}
-                    id={element.celda}
-                    className="celda col-4 border d-flex justify-content-around align-items-center"
-                    onClick={confeti? ()=>setIsOpen(true) : () => bloque(element.celda)}
-                  >
-                    <h1 className={element.valor === 1 ? "colorx" : "coloro"}>
-                      {element.valor === 1
-                        ? "X"
-                        : element.valor === 0
-                        ? "O"
-                        : ""}
-                    </h1>
-                  </div>
-                );
-              })}
-            </div>
+              <div className="caja row d-flex justify-content-center align-items-center">
+                {posiciones.map((element) => {
+                  return (
+                    <div
+                      key={element.celda}
+                      id={element.celda}
+                      className="celda col-4 border d-flex justify-content-around align-items-center"
+                      onClick={
+                        confeti
+                          ? () => setIsOpen(true)
+                          : () => bloque(element.celda)
+                      }
+                    >
+                      <h1 className={element.valor === 1 ? "colorx" : "coloro"}>
+                        {element.valor === 1
+                          ? "X"
+                          : element.valor === 0
+                          ? "O"
+                          : ""}
+                      </h1>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

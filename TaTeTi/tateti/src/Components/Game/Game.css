@@ -94,6 +94,9 @@
         height: 50px;
         width: 50px;
       }
+      .modal{
+          width: 80%!important;
+      }
 }
 @media only screen and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
@@ -137,4 +140,7 @@
         height: 50px;
         width: 50px;
       }
+      .modal{
+        width: 90%!important;
+    }
 }
