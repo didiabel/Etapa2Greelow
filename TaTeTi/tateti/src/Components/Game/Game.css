@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
-* {
-    font-family: 'Cardo', serif;
-        font-size: 15px;
-      color: rgb(84, 216, 106);
-}
-.app{
-    background-color: rgb(46, 46, 187);
-}
+
 @media only screen and (max-width: 2000px){
+    * {
+        font-family: 'Cardo', serif;
+            font-size: 22px;
+          color: rgb(84, 216, 106);
+    }
+    .app{
+        background-color: rgb(46, 46, 187);
+    }
     /*Tablets [601px -> 1200px]*/
     .app{
         background-color: rgb(46, 46, 187);
@@ -53,7 +54,15 @@
       }
 }
 @media only screen and (max-width: 655px){
-	/*Big smartphones [426px -> 600px]*/
+    * {
+        font-family: 'Cardo', serif;
+            font-size: 16px;
+          color: rgb(84, 216, 106);
+    }
+    .app{
+        background-color: rgb(46, 46, 187);
+    }
+    /*Big smartphones [426px -> 600px]*/
     .startup{
         margin-top: -200px;
         height: 400px;
@@ -99,6 +108,14 @@
       }
 }
 @media only screen and (max-width: 425px){
+    * {
+        font-family: 'Cardo', serif;
+            font-size: 13px;
+          color: rgb(84, 216, 106);
+    }
+    .app{
+        background-color: rgb(46, 46, 187);
+    }
 	/*Small smartphones [325px -> 425px]*/
     .startup{
         margin-top: -200px;
@@ -140,7 +157,4 @@
         height: 50px;
         width: 50px;
       }
-      .modal{
-        width: 90%!important;
-    }
 }
