@@ -1,16 +1,18 @@
 {
-  "files": {
-    "main.css": "/Etapa2Greelow/static/css/main.5df72c1c.css",
-    "main.js": "/Etapa2Greelow/static/js/main.bb04f9c7.js",
-    "static/js/787.bb35654a.chunk.js": "/Etapa2Greelow/static/js/787.bb35654a.chunk.js",
-    "static/media/Sin título(3).jpg": "/Etapa2Greelow/static/media/Sin título(3).040b9470e9adcfef1fed.jpg",
-    "index.html": "/Etapa2Greelow/index.html",
-    "main.5df72c1c.css.map": "/Etapa2Greelow/static/css/main.5df72c1c.css.map",
-    "main.bb04f9c7.js.map": "/Etapa2Greelow/static/js/main.bb04f9c7.js.map",
-    "787.bb35654a.chunk.js.map": "/Etapa2Greelow/static/js/787.bb35654a.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.5df72c1c.css",
-    "static/js/main.bb04f9c7.js"
-  ]
+  "main.css": "/Etapa2Greelow/static/css/main.57c225c8.chunk.css",
+  "main.js": "/Etapa2Greelow/static/js/main.12cbc8e9.chunk.js",
+  "main.js.map": "/Etapa2Greelow/static/js/main.12cbc8e9.chunk.js.map",
+  "static/js/1.269d177d.chunk.js": "/Etapa2Greelow/static/js/1.269d177d.chunk.js",
+  "static/js/1.269d177d.chunk.js.map": "/Etapa2Greelow/static/js/1.269d177d.chunk.js.map",
+  "static/css/2.d71f42bd.chunk.css": "/Etapa2Greelow/static/css/2.d71f42bd.chunk.css",
+  "static/js/2.e86474b4.chunk.js": "/Etapa2Greelow/static/js/2.e86474b4.chunk.js",
+  "static/js/2.e86474b4.chunk.js.map": "/Etapa2Greelow/static/js/2.e86474b4.chunk.js.map",
+  "runtime~main.js": "/Etapa2Greelow/static/js/runtime~main.c3ec26fe.js",
+  "runtime~main.js.map": "/Etapa2Greelow/static/js/runtime~main.c3ec26fe.js.map",
+  "static/media/Game.css": "/Etapa2Greelow/static/media/Sin título(3).fc155196.jpg",
+  "static/css/main.57c225c8.chunk.css.map": "/Etapa2Greelow/static/css/main.57c225c8.chunk.css.map",
+  "static/css/2.d71f42bd.chunk.css.map": "/Etapa2Greelow/static/css/2.d71f42bd.chunk.css.map",
+  "index.html": "/Etapa2Greelow/index.html",
+  "precache-manifest.fc4dca3901039876f47f4ad1ff081a3d.js": "/Etapa2Greelow/precache-manifest.fc4dca3901039876f47f4ad1ff081a3d.js",
+  "service-worker.js": "/Etapa2Greelow/service-worker.js"
 }
