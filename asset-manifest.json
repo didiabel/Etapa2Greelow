@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Etapa2Greelow/static/css/main.73fbd4c7.css",
-    "main.js": "/Etapa2Greelow/static/js/main.db2333ba.js",
+    "main.css": "/Etapa2Greelow/static/css/main.5df72c1c.css",
+    "main.js": "/Etapa2Greelow/static/js/main.bb04f9c7.js",
     "static/js/787.bb35654a.chunk.js": "/Etapa2Greelow/static/js/787.bb35654a.chunk.js",
+    "static/media/Sin título(3).jpg": "/Etapa2Greelow/static/media/Sin título(3).040b9470e9adcfef1fed.jpg",
     "index.html": "/Etapa2Greelow/index.html",
-    "main.73fbd4c7.css.map": "/Etapa2Greelow/static/css/main.73fbd4c7.css.map",
-    "main.db2333ba.js.map": "/Etapa2Greelow/static/js/main.db2333ba.js.map",
+    "main.5df72c1c.css.map": "/Etapa2Greelow/static/css/main.5df72c1c.css.map",
+    "main.bb04f9c7.js.map": "/Etapa2Greelow/static/js/main.bb04f9c7.js.map",
     "787.bb35654a.chunk.js.map": "/Etapa2Greelow/static/js/787.bb35654a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73fbd4c7.css",
-    "static/js/main.db2333ba.js"
+    "static/css/main.5df72c1c.css",
+    "static/js/main.bb04f9c7.js"
   ]
 }
