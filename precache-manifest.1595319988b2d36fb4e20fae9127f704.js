@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "12cbc8e973630084afef",
-    "url": "/Etapa2Greelow/static/css/main.57c225c8.chunk.css"
+    "revision": "84e0f8b3a9d186e4b732",
+    "url": "/Etapa2Greelow/static/css/main.0395173d.chunk.css"
   },
   {
-    "revision": "12cbc8e973630084afef",
-    "url": "/Etapa2Greelow/static/js/main.12cbc8e9.chunk.js"
+    "revision": "84e0f8b3a9d186e4b732",
+    "url": "/Etapa2Greelow/static/js/main.84e0f8b3.chunk.js"
   },
   {
     "revision": "269d177dfa7b1bf5e155",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/Etapa2Greelow/static/media/Sin título(3).fc155196.jpg"
   },
   {
-    "revision": "6f3e1aea81e6080c1a84a809ae2cb44b",
+    "revision": "7bfffd06a95a72a3f98f986b49ec2592",
     "url": "/Etapa2Greelow/index.html"
   }
 ];

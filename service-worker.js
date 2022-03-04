@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Etapa2Greelow/precache-manifest.fc4dca3901039876f47f4ad1ff081a3d.js"
+  "/Etapa2Greelow/precache-manifest.1595319988b2d36fb4e20fae9127f704.js"
 );
 
 workbox.clientsClaim();
