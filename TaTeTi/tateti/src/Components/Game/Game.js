@@ -26,12 +26,9 @@ const Game = () => {
     empate,
     setEmpate,
     ganno,
-    setGanno,
+    setGanno,closeModal
   } = useContext(Context);
 
-  function closeModal() {
-    setIsOpen(false);
-  }
   //funcion ir a inicio
   let navigate = useNavigate();
 

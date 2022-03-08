@@ -7,19 +7,18 @@ import PageContextProvider from "./Store/appContext";
 import Game from "./Components/Game";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-
 function App() {
   return (
-    <PageContextProvider>
-      <div className="app">
-        <Router>
-          <Routes>
-            <Route path="/Etapa2Greelow/" element={<StartUp />} />
-            <Route path="/Etapa2Greelow/juego" element={<Game/>} /> 
-          </Routes>
-        </Router>
-      </div>
-    </PageContextProvider>
+    <div className="app">
+      <PageContextProvider>
+              <Router>
+                <Routes>
+                  <Route path="/Etapa2Greelow/" element={<StartUp />} />
+                  <Route path="/Etapa2Greelow/juego" element={<Game />} />
+                </Routes>
+              </Router>
+      </PageContextProvider>
+    </div>
   );
 }
 

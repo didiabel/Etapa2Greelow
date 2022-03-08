@@ -46,9 +46,14 @@ const PageContextProvider = ({ children }) => {
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
       transition: "linear",
+      height: '80%',
       opacity: "100%",
     },
   };
+  //clsemodal
+  function closeModal() {
+    setIsOpen(false);
+  }
 //datos para game.js
   const [posiciones, setPosiciones] = useState([
     { celda: "A1", valor: "" },
@@ -72,6 +77,7 @@ const PageContextProvider = ({ children }) => {
     { celda: "C2", valor: "" },
     { celda: "C3", valor: "" },
   ];
+
   return (
     <Context.Provider
       value={{
@@ -98,7 +104,7 @@ const PageContextProvider = ({ children }) => {
         empate,
         setEmpate,
         ganno,
-        setGanno,
+        setGanno,closeModal
       }}
     >
       {children}
