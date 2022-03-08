@@ -16,7 +16,6 @@ function App() {
           <Routes>
             <Route path="/Etapa2Greelow/" element={<StartUp />} />
             <Route path="/Etapa2Greelow/juego" element={<Game/>} /> 
-            
           </Routes>
         </Router>
       </div>

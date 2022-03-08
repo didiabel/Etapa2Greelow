@@ -20,6 +20,58 @@ const PageContextProvider = ({ children }) => {
   const [errorNoHayJug1, seterrorNoHayJug1] = useState(true);
   const [errorNoHayJug2, seterrorNoHayJug2] = useState(true);
 
+  //states para game.js
+  const [confeti, setConfeti] = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [empate, setEmpate] = useState(false);
+  const [ganno, setGanno] = useState(false);
+
+//estilos para modal
+  const customModalStyles = {
+    overlay: {
+      position: "fixed",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(255, 255, 255,0.15)",
+    },
+    content: {
+      position: "absolute",
+      backgroundColor: "white",
+      top: "50%",
+      left: "50%",
+      right: "10%",
+      bottom: "-20%",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      transition: "linear",
+      opacity: "100%",
+    },
+  };
+//datos para game.js
+  const [posiciones, setPosiciones] = useState([
+    { celda: "A1", valor: "" },
+    { celda: "A2", valor: "" },
+    { celda: "A3", valor: "" },
+    { celda: "B1", valor: "" },
+    { celda: "B2", valor: "" },
+    { celda: "B3", valor: "" },
+    { celda: "C1", valor: "" },
+    { celda: "C2", valor: "" },
+    { celda: "C3", valor: "" },
+  ]);
+  let posicionesCopia = [
+    { celda: "A1", valor: "" },
+    { celda: "A2", valor: "" },
+    { celda: "A3", valor: "" },
+    { celda: "B1", valor: "" },
+    { celda: "B2", valor: "" },
+    { celda: "B3", valor: "" },
+    { celda: "C1", valor: "" },
+    { celda: "C2", valor: "" },
+    { celda: "C3", valor: "" },
+  ];
   return (
     <Context.Provider
       value={{
@@ -35,6 +87,18 @@ const PageContextProvider = ({ children }) => {
         seterrorNoHayJug1,
         errorNoHayJug2,
         seterrorNoHayJug2,
+        customModalStyles,
+        posiciones,
+        setPosiciones,
+        posicionesCopia,
+        confeti,
+        setConfeti,
+        modalIsOpen,
+        setIsOpen,
+        empate,
+        setEmpate,
+        ganno,
+        setGanno,
       }}
     >
       {children}

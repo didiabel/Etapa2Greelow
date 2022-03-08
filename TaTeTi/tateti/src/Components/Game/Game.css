@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 @media only screen and (max-width: 2000px){
     * {
-        font-family: 'Cardo', serif;
+      font-family: 'Oswald', sans-serif;
             font-size: 22px;
           color: rgb(84, 216, 106);
     }
+    .startUpBox{
+      background-color: rgb(0, 0, 0, 0.6);
+      
+    }
     .app{
-        background-color: rgb(46, 46, 187);
+      background-image: url('../../img/Sintitulo(3).jpg');
+        background-size: 125%;
     }
     /*Tablets [601px -> 1200px]*/
     .app{
@@ -24,7 +29,7 @@
     input{
         width: 250px;
     }
-    .celda h1 {
+    .celda h1{
       font-size: 100px;
     }
     .caja {
@@ -55,9 +60,7 @@
 }
 @media only screen and (max-width: 655px){
     * {
-        font-family: 'Cardo', serif;
             font-size: 16px;
-          color: rgb(84, 216, 106);
     }
     .app{
         background-color: rgb(46, 46, 187);
@@ -109,9 +112,7 @@
 }
 @media only screen and (max-width: 425px){
     * {
-        font-family: 'Cardo', serif;
             font-size: 13px;
-          color: rgb(84, 216, 106);
     }
     .app{
         background-color: rgb(46, 46, 187);
@@ -157,4 +158,9 @@
         height: 50px;
         width: 50px;
       }
+}
+.palabraStartUp h1{
+  word-wrap: break-word;
+white-space: pre-wrap;
+word-break: break-word;
 }
