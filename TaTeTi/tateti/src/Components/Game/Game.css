@@ -26,8 +26,8 @@
       width: 653px;
     }
     .celda {
-      height: 150px;
-      width: 150px;
+      height: 120px;
+      width: 120px;
     }
     input{
         width: 250px;
@@ -36,8 +36,8 @@
       font-size: 100px;
     }
     .caja {
-      height: 450px;
-      width: 453px;
+      height: 360px;
+      width: 363px;
     }
     .colorx {
       color: rgb(100, 179, 69);
@@ -127,18 +127,18 @@
         width: 303px;
     }
     .celda {
-      height: 100px;
-      width: 100px;
+      height: 50px;
+      width: 50px;
     }
     input{
         width: 90px;
     }
     .celda h1 {
-      font-size: 50px;
+      font-size: 20px;
     }
     .caja {
-      height: 300px;
-      width: 303px;
+      height: 150px;
+      width: 153px;
     }
     .colorx {
       color: rgb(100, 179, 69);

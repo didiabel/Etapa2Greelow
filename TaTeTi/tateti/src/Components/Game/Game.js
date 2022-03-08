@@ -316,6 +316,7 @@ const Game = () => {
           </div>
         </div>
       )}
+      <div className="d-flex justify-content-around  align-items-center vh-100"></div>
     </div>
   );
 };

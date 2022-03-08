@@ -46,7 +46,7 @@ const PageContextProvider = ({ children }) => {
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
       transition: "linear",
-      height: '80%',
+      height: '85%',
       opacity: "100%",
     },
   };
