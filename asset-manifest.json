@@ -1,18 +1,16 @@
 {
-  "main.css": "/Etapa2Greelow/static/css/main.0395173d.chunk.css",
-  "main.js": "/Etapa2Greelow/static/js/main.84e0f8b3.chunk.js",
-  "main.js.map": "/Etapa2Greelow/static/js/main.84e0f8b3.chunk.js.map",
-  "static/js/1.269d177d.chunk.js": "/Etapa2Greelow/static/js/1.269d177d.chunk.js",
-  "static/js/1.269d177d.chunk.js.map": "/Etapa2Greelow/static/js/1.269d177d.chunk.js.map",
-  "static/css/2.d71f42bd.chunk.css": "/Etapa2Greelow/static/css/2.d71f42bd.chunk.css",
-  "static/js/2.e86474b4.chunk.js": "/Etapa2Greelow/static/js/2.e86474b4.chunk.js",
-  "static/js/2.e86474b4.chunk.js.map": "/Etapa2Greelow/static/js/2.e86474b4.chunk.js.map",
-  "runtime~main.js": "/Etapa2Greelow/static/js/runtime~main.c3ec26fe.js",
-  "runtime~main.js.map": "/Etapa2Greelow/static/js/runtime~main.c3ec26fe.js.map",
-  "static/media/Game.css": "/Etapa2Greelow/static/media/Sin título(3).fc155196.jpg",
-  "static/css/2.d71f42bd.chunk.css.map": "/Etapa2Greelow/static/css/2.d71f42bd.chunk.css.map",
-  "static/css/main.0395173d.chunk.css.map": "/Etapa2Greelow/static/css/main.0395173d.chunk.css.map",
-  "index.html": "/Etapa2Greelow/index.html",
-  "precache-manifest.1595319988b2d36fb4e20fae9127f704.js": "/Etapa2Greelow/precache-manifest.1595319988b2d36fb4e20fae9127f704.js",
-  "service-worker.js": "/Etapa2Greelow/service-worker.js"
+  "files": {
+    "main.css": "/Etapa2Greelow/static/css/main.6cbc9a1a.css",
+    "main.js": "/Etapa2Greelow/static/js/main.600827bf.js",
+    "static/js/787.bb35654a.chunk.js": "/Etapa2Greelow/static/js/787.bb35654a.chunk.js",
+    "static/media/Sintitulo(3).jpg": "/Etapa2Greelow/static/media/Sintitulo(3).0142b3d42a04d72d60e8.jpg",
+    "index.html": "/Etapa2Greelow/index.html",
+    "main.6cbc9a1a.css.map": "/Etapa2Greelow/static/css/main.6cbc9a1a.css.map",
+    "main.600827bf.js.map": "/Etapa2Greelow/static/js/main.600827bf.js.map",
+    "787.bb35654a.chunk.js.map": "/Etapa2Greelow/static/js/787.bb35654a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cbc9a1a.css",
+    "static/js/main.600827bf.js"
+  ]
 }
