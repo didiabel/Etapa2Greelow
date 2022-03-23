@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Etapa2Greelow/static/css/main.671c315f.css",
-    "main.js": "/Etapa2Greelow/static/js/main.926f0b88.js",
+    "main.js": "/Etapa2Greelow/static/js/main.1551cd6e.js",
     "static/js/787.bb35654a.chunk.js": "/Etapa2Greelow/static/js/787.bb35654a.chunk.js",
     "static/media/Sintitulo(3).jpg": "/Etapa2Greelow/static/media/Sintitulo(3).0142b3d42a04d72d60e8.jpg",
     "index.html": "/Etapa2Greelow/index.html",
     "main.671c315f.css.map": "/Etapa2Greelow/static/css/main.671c315f.css.map",
-    "main.926f0b88.js.map": "/Etapa2Greelow/static/js/main.926f0b88.js.map",
+    "main.1551cd6e.js.map": "/Etapa2Greelow/static/js/main.1551cd6e.js.map",
     "787.bb35654a.chunk.js.map": "/Etapa2Greelow/static/js/787.bb35654a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.671c315f.css",
-    "static/js/main.926f0b88.js"
+    "static/js/main.1551cd6e.js"
   ]
 }
