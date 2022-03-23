@@ -78,6 +78,11 @@ const Game = () => {
 
   const otraRonda = () => {
     setPosiciones(posicionesCopia);
+    if (XoO === "X") {
+      setXoO("O");
+    } else {
+      setXoO("X");
+    }
     closeModal();
     setEmpate(false);
     setConfeti(false);
@@ -110,7 +115,7 @@ const Game = () => {
     ) {
       setGanno(true);
       let nuevoPunto = players.map((jug) => {
-        if (jug.jug === XoO) {
+        if (jug.jug !== XoO) {
           jug.puntaje++;
           setIsOpen(true);
           setConfeti(true);
@@ -164,7 +169,7 @@ const Game = () => {
                 <h2>
                   {empate
                     ? "Empataron :("
-                    : XoO === "X"
+                    : XoO === players[1].jug
                     ? "Ganaste! " + players[0].player
                     : "Ganaste! " + players[1].player}
                 </h2>
