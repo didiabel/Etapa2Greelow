@@ -110,7 +110,7 @@ const Game = () => {
     ) {
       setGanno(true);
       let nuevoPunto = players.map((jug) => {
-        if (jug.jug !== XoO) {
+        if (jug.jug === XoO) {
           jug.puntaje++;
           setIsOpen(true);
           setConfeti(true);

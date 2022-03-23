@@ -16,18 +16,6 @@ const StartUp = () => {
     seterrorNoHayJug1,
     errorNoHayJug2,
     seterrorNoHayJug2,
-    customModalStyles,
-    posiciones,
-    setPosiciones,
-    posicionesCopia,
-    confeti,
-    setConfeti,
-    modalIsOpen,
-    setIsOpen,
-    empate,
-    setEmpate,
-    ganno,
-    setGanno,closeModal
   } = useContext(Context);
 
   const [loading, setLoading] = useState(false);
