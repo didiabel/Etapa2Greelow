@@ -13,8 +13,8 @@ function App() {
       <PageContextProvider>
               <Router>
                 <Routes>
-                  <Route path="/Etapa2Greelow/" element={<StartUp />} />
-                  <Route path="/Etapa2Greelow/juego" element={<Game />} />
+                  <Route path="/TaTeTi//" element={<StartUp />} />
+                  <Route path="/TaTeTi/juego" element={<Game />} />
                 </Routes>
               </Router>
       </PageContextProvider>
