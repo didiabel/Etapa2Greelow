@@ -37,13 +37,13 @@ const Game = () => {
     setConfeti(false);
     setIsOpen(false);
     setPosiciones(posicionesCopia);
-    navigate("/Etapa2Greelow/");
+    navigate("/TaTeTi/");
   };
 
   //si algun jugador no tiene nombre ir al inicio
   if (!jugador1 || !jugador2) {
     setTimeout(() => {
-      navigate("/Etapa2Greelow/");
+      navigate("/TaTeTi/");
     }, 3000);
   }
 
@@ -242,13 +242,13 @@ const Game = () => {
                 <ShareButton
                   compact
                   socialMedia={"facebook"}
-                  url={"https://didiabel.github.io/Etapa2Greelow/"}
+                  url={"https://didiabel.github.io/TaTeTi/"}
                   text="Juga Al TaTeTi"
                 />
                 <ShareButton
                   compact
                   socialMedia={"twitter"}
-                  url={"https://didiabel.github.io/Etapa2Greelow/"}
+                  url={"https://didiabel.github.io/TaTeTi/"}
                   text="Juga Al TaTeTi"
                 />
               </div>
