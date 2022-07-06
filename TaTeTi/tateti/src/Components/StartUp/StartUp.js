@@ -74,7 +74,7 @@ const StartUp = () => {
     setLoading(true);
     setTimeout(function () {
       setXoO(empieza);
-      navigate("/Etapa2Greelow/juego");
+      navigate("/TaTeTi/juego");
     }, 2000);
   };
   return (
